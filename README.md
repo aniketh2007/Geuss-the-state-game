@@ -1,4 +1,9 @@
-# Guess the US state game
-Geuss the state game was developed using python, panda library and turtle module
-It uses a csv and image as an input.
-The game it creates the csv or excel file of the not guessed states so you can find out which states you have not guessed . 
+# Guess the USA state game
+- Guess the USA states game was created as part of learning using turtle, pandas library.
+- The CSV file contents the X, Y axis where the Image is located by using the event listener method onscreenclick() and the states name.
+- Step 1 : Using the turtle module to upload the background image we use add shape () method wwhich took the image as input and and added to the shape() method to the turtle.
+- Step 2 : Which was reading the csv file using pandas and read_csv() method and to take the input from the user using textinput() method and converting the input to title case using title() method.
+- Step 3 : Which is checking if the user answer is in the states column converting it into a list using to_list() method and if its there then get hold of the X, Y co-ordinate from the CSV file by iternating over row by chekc if the user guess is equal to the states name in the states column then using goto() method of the turtle library to go to the X, Y co-ordinate and write the states name and using item() method get hold of the individual items not the indexes.
+- Step 4 : Creating a while loop so the user answers all the 50 states. By using the len() function and appending guessed answers into a list. Then adding a counting mechanisim in the console by giving the guessed states name  in the user's answers textinput() method.
+- Step 4 : To exit the game by typing the exit on the console by using break statement to exit the while loop.
+- Step 5 : Creation of a new CSV file which contents the missed state names by the user. By creating an list and using for loop to iternate over the states and checking if the state is not in the guessed state then appending it to the missing item list them converting the list into the DataFrame then to a CSV file named state_to_learn.csv.
