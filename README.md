@@ -7,3 +7,4 @@
 - Step 4 : Creating a while loop so the user answers all the 50 states. By using the len() function and appending guessed answers into a list. Then adding a counting mechanisim in the console by giving the guessed states name  in the user's answers textinput() method.
 - Step 4 : To exit the game by typing the exit on the console by using break statement to exit the while loop.
 - Step 5 : Creation of a new CSV file which contents the missed state names by the user. By creating an list and using for loop to iternate over the states and checking if the state is not in the guessed state then appending it to the missing item list them converting the list into the DataFrame then to a CSV file named state_to_learn.csv.
+- The step 5 was improved by using list comprehension by reducing the lines of code by using missing states then in the same line looping over the all states then checking if state is not in guessed state then appending them to the missing states
